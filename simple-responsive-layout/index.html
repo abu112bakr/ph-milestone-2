@@ -3,10 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple responsive layout</title>
-    <link rel="stylesheet" href="/styles/style.css">
+    <title>FlexBox</title>
+    <style>
+        .container {
+            border: 2px solid salmon;
+            display: flex;
+            /* justify-content thake horizontal borabor */
+            /* banpashe thakbe */
+            /* justify-content: flex-start; */
+            /* danpashe thakbe */
+            /* justify-content: flex-end; */
+            /* majkhane thakbe flex gula */
+            /* justify-content: center; */
+            /* majkhane shoman space */
+            /* justify-content: space-between; */
+            /* charpashe shoman space */
+            /* justify-content: space-evenly; */
+            /* sidee space kom, majkhane space beshi */
+            /* justify-content: space-around; */
+            height: 250px;
+            /* Align-items items gula koi thakbe */
+            /* bydefault */
+            /* align-items: flex-start; */
+            /* itemgula sesh e thakbe */
+            /* align-items: flex-end; */
+            /* center e thakbe */
+            /* align-items: center; */
+            /* flex-direction:  kon dike flex hbe */
+            /* pashapashi na hoea collab borobor thakbe */
+            /* flex-direction: column; */
+            /* reversely collab borobor thakbe */
+            /* flex-direction: column-reverse; */
+            /* bydefult */
+            /* flex-direction: row; */
+            /* reversely row borobaor */
+            /* flex-direction: row-reverse; */
+            /* jaiga kome gele nicher line e eshe wrap korbe */
+            flex-wrap: wrap;
+            /* flex-wrap: nowrap; */
+
+
+        }
+        .box{
+            border: 2px dashed tomato;
+            width: 50px;
+            height: 50px;
+
+        }
+    </style>
 </head>
 <body>
+    <h1>FlexBox Layout </h1>
+    <div class="container">
+         <!-- .box{box-$}*3 -->
+         <div class="box">box-1</div>
+         <div class="box">box-2</div>
+         <div class="box">box-3</div>
+         <div class="box">box-4</div>
+         <div class="box">box-5</div>
+         <div class="box">box-6</div>
+         <div class="box">box-7</div>
+         <div class="box">box-8</div>
+         <div class="box">box-9</div>
+         <div class="box">box-10</div>
+    </div>
     
 </body>
 </html>
