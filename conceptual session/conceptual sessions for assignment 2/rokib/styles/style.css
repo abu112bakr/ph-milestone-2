@@ -1,0 +1,71 @@
+/* When fleix is row, justify content work form left to right and align ite up to down
+and wehn flex is collum, justify content up to down and align item left to right */
+/* font import when in css file  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* universal selector to overide browser */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+} 
+/* navbar style start here */
+.header{
+    background-color: #9376e0;
+}
+.header-section{
+    max-width: 1250px;
+    /* background-color: rebeccapurple; */
+    /* small size so keeping reactangle in middle */
+    margin: 0 auto;
+    /* border: 2px solid blue; */
+    display: flex;
+}
+.nav-container{
+    /* border: 2px solid #ff0000; */
+    min-height: 40px;
+    display: flex;
+    /* putting all flex item on left not top left*/
+    align-items: center;
+    /* border: 1px solid blue; */
+    /* two reactangle each 50% */
+    width: 50%;
+
+}
+
+.nav-container img{
+    width: 90px;
+
+}
+.nav-container p{
+    font-size: 25px;
+}
+.special{
+    color: #e893cf;
+    /* making it bold */
+    font-weight: 900;
+}
+.items-container{
+    /* border: 2px solid yellow; */
+    width: 50%;
+    /* making space between them */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.items-container a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+/* two apply specific coler within something */
+.items-container .login-button a{
+    padding: 10px 20px;
+    background-color: #e893cf;
+    border-radius: 5px;
+    color: black;
+}
